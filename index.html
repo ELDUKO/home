@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HOME</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilosindex.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!--Esta etiqueta link es para poder poner el menú hamburguesa-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Aquí estan los estilos para las cosas-->
+  <link rel="stylesheet" href="css/headerfooter.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <!--El header va fuera de la etiqueta main-->
+  <div id="header">
+    <header>
+      <a href="index.html"><img id="headerlogo" src="imgs/LogoAkaSushiBlanco.svg" alt="LogoAkaSushi"></a>
+      <nav>
+        <ul>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="reviews.html">Reseñas</a></li>
+          <li><a href="finalcontacto.html">Contacto</a></li>
+          <li id="icon"><a href="javascript:void(0);" class="icon" onclick="menumas()">
+              <i class="fa fa-bars"></i></a></li>
+
+          <script>
+            function menumas() {
+              document.getElementsByClassName("navham")[0].classList.toggle("navhammas");
+            }
+          </script>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navham">
+      <div class="menu2">
+        <a href="reviews.html">Menú</a>
+        <a href="menu.html">Reseñas</a>
+        <a href="finalcontacto.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="main">
+
+
+    <!-- aqui ira el slider que esta pendiente-->
+    <section class="slider">
+      <div class="slider__container container">
+        <img src="imgs/bx-left-arrow-alt.svg" alt="" class="slider__arrow" id="before">
+
+        <section class="slider__body slider__body--show" data-id="1">
+          <img src="imgs/akagiri.png" alt="" class="cuadrop">
+          <!--<div class="slider__text">
+            <h1 class="titulo">AKAGIRI</h1>
+            <p class="review">
+              Nigiri de salmón, camarón, arroz y alga nori
+              Esta es la versión tradicional del sushi japonés. Es una pequeña porción de arroz de entre 4 a 5 cm con
+              una
+              forma alargada.
+            </p>
+            <span>$45.00</span>
+          </div>
+          <figure class="slider__picture">
+            <img src="imgs/nigiri.jpg" alt="" class="slider-img">
+          </figure> -->
+        </section>
+
+        <section class="slider__body" data-id="2">
+          <img src="imgs/salmon roll.png" alt="" class="cuadrop">
+          <!-- <div class="slider__text">
+            <h1 class="titulo">SALMON ROLL</h1>
+            <p class="review">
+              Exquisito rollo de salmón con queso crema, aguacate, todo esto envuelto en un rico salmón.
+          </div>
+          <figure class="slider__picture">
+            <img src="imgs/rollos.jpg" alt="" class="slider-img">
+          </figure>-->
+        </section>
+
+        <section class="slider__body" data-id="3">
+          <img src="imgs/taiyaki.png" alt="" class="cuadrop">
+          <!--<div class="slider__text">
+            <h1 class="titulo">TAIYAKI</h1>
+            <p class="review">
+              Delicioso pastel japonés con relleno de pasta de frijol rojo o helado, cualquiera que sea tu eleeción.
+            </p>
+          </div>
+          <figure class="slider__picture">
+            <img src="imgs/taiyaki.jpg" alt="" class="slider-img">
+          </figure> -->
+        </section>
+
+        <section class="slider__body" data-id="4">
+          <img src="imgs/TIRAMISU.png" alt="" class="cuadrop">
+          <!--<div class="slider__text">
+            <h1 class="titulo">TIRAMISÚ</h1>
+            <p class="review">
+              Rico postre frio de capas de bizcocho, café y crema. Todo esto bajo un delicioso espolvoreado con cacao.
+          </div>
+          <figure class="slider__picture">
+            <img src="imgs/tiramisu.jpg" alt="" class="slider-img">
+          </figure> -->
+        </section>
+
+        <section class="slider__body" data-id="5">
+          <img src="imgs/sake.png" alt="" class="cuadrop">
+          <!--<div class="slider__text">
+            <h1 class="titulo">SAKE</h1>
+            <p class="review">
+              Tenemos el mejor licor japonés. Ven a tentar tu suerte con nuestro rico Sake, único en su clase.
+            </p>
+          </div>
+          <figure class="slider__picture">
+            <img src="imgs/sake.jpg" alt="" class="slider-img">
+          </figure> -->
+        </section>
+
+        <img src="imgs/bx-right-arrow-alt.svg" alt="" class="slider__arrow" id="next">
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="item">
+        <button class="btn-outline"><a href="menu.html">VER MAS</a></button>
+      </div>
+    </div>
+    <!--aqui empieza la seccion de nosotros y toda esa vaina-->
+    <div class="descripcion">
+      <section class="hover">
+        <img src="imgs/chino.png" alt="">
+        <div class="txt">
+          <h1>QUIENES SOMOS NOSOTROS</h1>
+          <p> Somos El equipo Tirri, un gran equipo conformado por los alumnos más competitivos en cuanto
+            desarrollo y diseño web con HTML, CSS y JS. Tratamos de plasmar en cada uno de nuestros proyectos el 100% de
+            nuestra personalidad
+            consiguiendo así, tener un toque que, denota una diferencia respecto a otros proyectos. Tratamos de
+            consagrar un "Sello de la casa".</p>
+        </div>
+      </section>
+      <div class="logo">
+        <img src="imgs/isotiposvg.svg" alt="">
+      </div>
+    </div>
+
+    <div class="descripcion1">
+      <div class="logo1">
+        <img src="imgs/shushi.png" alt="" class="shushi">
+      </div>
+      <section class="hover1">
+        <img src="imgs/chino.png" alt="">
+        <div class="txt1">
+          <h1>CUAL ES NUESTRA META</h1>
+          <p> Tenemos como objetivo convertir nuestra web en una experiencia inigualable para cualquier usuario. Tenemos
+            una meta clara, ser la oveja negra del rebaño. Con la realización de este
+            proyecto, preveemos obtener una gran cantidad de nuevos conocimientos en el ambito del desarrollo web
+            comercial.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+
+    <video class="vidio" src="imgs/sushi.mp4" type="video/mp4" crossorigin="anonymous" autoplay loop muted
+      playsinline></video>
+
+  </section>
+
+
+
+
+  <!--El footer va fuera de la etiqueta main-->
+  <footer>
+    <div id="footerlogo">
+      <a href="index.html"><img id="foterlogo" src="imgs/LogoAkaSushiBlanco.svg" alt="LogoAkaSushi"></a>
+    </div>
+
+    <div id="footermenu">
+      <a href="menu.html">Menú</a>
+      <ul>
+        <li><a href="menu.html#Sushi">Sushi</a></li>
+        <li><a href="menu.html#Entradas">Entrada</a></li>
+        <li><a href="menu.html#Bebidas">Bebidas</a></li>
+        <li><a href="menu.html#Postre">Postres</a></li>
+      </ul>
+    </div>
+
+    <div id="footerreseñas">
+      <a href="reviews.html">Reseñas</a>
+      <ul>
+        <li><a href="reviews.html">Sushi</a></li>
+        <li><a href="reviews.html">Bebidas</a></li>
+        <li><a href="reviews.html">Entradas</a></li>
+        <li><a href="reviews.html">Postres</a></li>
+      </ul>
+    </div>
+
+    <div id="footercontacto">
+      <a href="finalcontacto.html">Contacto</a>
+      <ul>
+        <li><a href="https://goo.gl/maps/43QfB29C2NSPSrSP9">Ubicación</a></li>
+        <li>
+          <a href="mailto:aka@sushi.com">aka@sushi.com</a>
+        </li>
+        <li>
+          <div id="footerredes">
+            <a href="https://twitter.com/"><img src="imgs/icons8-twitter.svg"></a>
+            <a href="https://es-la.facebook.com/"><img src="imgs/icons8-facebook.svg"></a>
+            <a href="https://mx.linkedin.com/"><img src="imgs/icons8-linkedin.svg"></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="imgs/icons8-instagram.svg"></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
